@@ -2,7 +2,7 @@
 
 namespace BlazingPizza.Pages;
 
-public class OderDetailBase : ComponentBase
+public class OrderDetailBase : ComponentBase
 {
     [Inject]
     protected HttpClient HttpClient { get; set; }
