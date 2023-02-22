@@ -1,3 +1,7 @@
+# Allow customers to place an order
+
+Manage Checkout Page's PlaceOrder button
+
 # Acces to Data
 
 Use of SQLLite to stock pizzas :

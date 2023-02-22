@@ -15,7 +15,6 @@ public class IndexBase : ComponentBase
 
     protected static Order order => OrderState.Order;
 
-
     //protected override void OnInitialized()
     //{
     //    specials.AddRange(new List<PizzaSpecial>
