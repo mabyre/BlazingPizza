@@ -21,6 +21,6 @@ public class CheckoutBase : ComponentBase
         var response = await HttpClient.PostAsJsonAsync(NavigationManager.BaseUri + "orders", OrderState.Order);
         var newOrderId = await response.Content.ReadFromJsonAsync<int>();
         OrderState.ResetOrder();
-        NavigationManager.NavigateTo("/");
+        NavigationManager.NavigateTo("/myorders");
     }
 }

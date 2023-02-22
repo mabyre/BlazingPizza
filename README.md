@@ -1,3 +1,6 @@
+# Add an order Page
+
+It's find for the customer to be able to summarize his order
 # Add Entity Framework support for orders and pizzas
 
 To test it's needed to remove the tree files pizza.db, pizza.db-shm, pizza.db-wal
