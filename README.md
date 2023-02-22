@@ -1,6 +1,9 @@
 # Add an order Page
 
 It's find for the customer to be able to summarize his order
+
+<img style="margin: 10px" src="Images/2023-02-22_12h15_16.png" alt="Price and Size binded on Slider" />
+
 # Add Entity Framework support for orders and pizzas
 
 To test it's needed to remove the tree files pizza.db, pizza.db-shm, pizza.db-wal
@@ -10,11 +13,24 @@ to make de DB recreat by Entity Framework
 
 Manage Checkout Page's PlaceOrder button
 
+<img style="margin: 10px" src="Images/2023-02-22_12h15_07.png" alt="Price and Size binded on Slider" />
+
 # Acces to Data
 
 Use of SQLLite to stock pizzas :
 
 [Learn Microsoft - Acces do data](https://learn.microsoft.com/fr-fr/training/modules/interact-with-data-blazor-web-apps/5-exercise-access-data-from-blazor-components)
+
+# Second Step
+
+Add Navigation
+
+<img style="margin: 10px" src="Images/2023-02-22_12h14_45.png" alt="Price and Size binded on Slider" />
+
+# First Step
+
+<img style="margin: 10px" src="Images/2023-02-22_12h14_32.png" alt="Price and Size binded on Slider" />
+
 
 # Contributing
 
