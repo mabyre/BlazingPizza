@@ -1,4 +1,12 @@
-# Add an order Page
+# Oder Detail Page
+
+Now you have a recap from your order.
+
+Use of MainLayout to factorize Navagation buttons
+
+<img style="margin: 10px" src="Images/2023-02-22_16h01_29.png" alt="Price and Size binded on Slider" />
+
+# Add an Order Page
 
 It's find for the customer to be able to summarize his order
 
