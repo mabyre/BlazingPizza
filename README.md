@@ -1,9 +1,14 @@
 # Add new Validation Page
 
-I had problems with the Blazor Component CodeBehind Templates (VS2022) and the directive @page "/"
+I had problems with the Blazor Component CodeBehind Templates (VS2022) and the directive **@page "/"** should be removed.
 
-Other problem with naming parameters of Shared Pages AddressEditor and OrderReview trying to named parameters in lower case but don't work. 
-There was a warnig saying that lower case is a mistake to naming convention...
+Other problem with naming parameters of Shared Pages AddressEditor and OrderReview trying to named parameters in lower case but don't work.
+There was a warnig saying that lower case is a mistake to naming convention.
+A thought I did it before in particular with Index.rasor.
+
+Is this problem due to not using **@inhirits** from PageBase should be checked.
+
+I'm not sure using IndexBase:ComponentBase and not partial so you can make properties protected is very usefull, the template does'nt.
 
 <img style="margin: 10px" src="Images/2023-02-22_18h05_15.png" alt="Price and Size binded on Slider" />
 
