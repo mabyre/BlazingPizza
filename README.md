@@ -1,3 +1,8 @@
+# Add Entity Framework support for orders and pizzas
+
+To test it's needed to remove the tree files pizza.db, pizza.db-shm, pizza.db-wal
+to make de DB recreat by Entity Framework
+
 # Allow customers to place an order
 
 Manage Checkout Page's PlaceOrder button

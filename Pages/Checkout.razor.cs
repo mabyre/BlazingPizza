@@ -18,8 +18,8 @@ public class CheckoutBase : ComponentBase
     protected async Task PlaceOrder()
     {
         isSubmitting = true;
-        //var response = await HttpClient.PostAsJsonAsync(NavigationManager.BaseUri + "orders", OrderState.Order);
-        //var newOrderId = await response.Content.ReadFromJsonAsync<int>();
+        var response = await HttpClient.PostAsJsonAsync(NavigationManager.BaseUri + "orders", OrderState.Order);
+        var newOrderId = await response.Content.ReadFromJsonAsync<int>();
         OrderState.ResetOrder();
         NavigationManager.NavigateTo("/");
     }
