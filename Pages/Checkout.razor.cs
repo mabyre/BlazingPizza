@@ -11,7 +11,7 @@ public class CheckoutBase : ComponentBase
     [Inject]
     protected NavigationManager NavigationManager { get; set; }
 
-    protected static Order order => OrderState.Order;
+    protected Order order => OrderState.Order;
 
     protected bool isSubmitting;
 
@@ -20,7 +20,7 @@ public class CheckoutBase : ComponentBase
         isSubmitting = true;
         var response = await HttpClient.PostAsJsonAsync(NavigationManager.BaseUri + "orders", OrderState.Order);
         var newOrderId = await response.Content.ReadFromJsonAsync<int>();
-        OrderState.ResetOrder();
-        NavigationManager.NavigateTo("/myorders");
+        //OrderState.ResetOrder();
+        NavigationManager.NavigateTo($"myorders/{newOrderId}");
     }
 }

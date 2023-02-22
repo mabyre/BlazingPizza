@@ -13,7 +13,7 @@ public class IndexBase : ComponentBase
 
     protected List<PizzaSpecial> specials = new();
 
-    protected static Order order => OrderState.Order;
+    protected Order order => OrderState.Order;
 
     //protected override void OnInitialized()
     //{
