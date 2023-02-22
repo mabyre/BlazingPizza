@@ -1,3 +1,12 @@
+# Add new Validation Page
+
+I had problems with the Blazor Component CodeBehind Templates (VS2022) and the directive @page "/"
+
+Other problem with naming parameters of Shared Pages AddressEditor and OrderReview trying to named parameters in lower case but don't work. 
+There was a warnig saying that lower case is a mistake to naming convention...
+
+<img style="margin: 10px" src="Images/2023-02-22_18h05_15.png" alt="Price and Size binded on Slider" />
+
 # Oder Detail Page
 
 Now you have a recap from your order.
