@@ -1,3 +1,14 @@
+# Create an EditContext for EditForm binding on
+
+This one was not easy cause I did not see this binding
+<EditForm EditContext=editContext
+
+While binding on Model=order.DeliveryAddress HandleFieldChanged was not fired.
+
+It's really a result of the validation of forms because we arrive at efficiency while
+coding formular forms
+
+
 # Better place for ValidationSummary
 
 * Before we remove the ValidationSummary I'd like to show there can ba a better place

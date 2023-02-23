@@ -1,11 +1,10 @@
 ﻿using BlazingPizza.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
-using Microsoft.AspNetCore.Hosting.Server;
 
 namespace BlazingPizza.Pages;
 
-public class CheckoutBase : ComponentBase
+public class CheckoutBase : ComponentBase, IDisposable
 {
     [Inject]
     protected HttpClient HttpClient { get; set; }
@@ -15,37 +14,32 @@ public class CheckoutBase : ComponentBase
 
     protected Order order => OrderState.Order;
 
-    protected bool isSubmitting;
+    protected bool isError = true; // show div alerte and button disabled
 
-    protected bool isError = false;
-    protected void ShowError()
+    protected EditContext editContext;
+
+    protected override void OnInitialized()
     {
-        isError = true;
+        editContext = new(order.DeliveryAddress);
+        editContext.OnFieldChanged += HandleFieldChanged;
     }
 
-    //protected bool isErrorName = false;
+    public void Dispose()
+    {
+        editContext.OnFieldChanged -= HandleFieldChanged;
+    }
+
+    private void HandleFieldChanged(object sender, FieldChangedEventArgs e)
+    {
+        isError = !editContext.Validate();
+        StateHasChanged();
+    }
 
     protected async Task PlaceOrder()
     {
-        isError = false;
-        isSubmitting = true;
-
         var response = await HttpClient.PostAsJsonAsync(NavigationManager.BaseUri + "orders", OrderState.Order);
         var newOrderId = await response.Content.ReadFromJsonAsync<int>();
         OrderState.ResetOrder();
         NavigationManager.NavigateTo($"myorders/{newOrderId}");
     }
-    //protected async Task CheckSubmission(EditContext editContext)
-    //{
-    //    isSubmitting = true;
-    //    var model = editContext.Model as Address;
-    //    isErrorName = string.IsNullOrWhiteSpace(model?.Name);
-    //    isError = string.IsNullOrWhiteSpace(model?.Line1)
-    //        || string.IsNullOrWhiteSpace(model?.PostalCode);
-    //    if (!isError && !isErrorName)
-    //    {
-    //        await PlaceOrder();
-    //    }
-    //    isSubmitting = false;
-    //}
 }
