@@ -1,3 +1,9 @@
+# First play with Validation Message
+
+* Add EditForm in Checkout.razor and InputText in AddressEditor.razor to play with form validation.
+
+<img style="margin: 10px" src="Images/2023-02-23_12h29_53.png" alt="Price and Size binded on Slider" />
+
 # Add new Validation Page
 
 I had problems with the Blazor Component CodeBehind Templates (VS2022) and the directive **@page "/"** should be removed.

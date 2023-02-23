@@ -4,19 +4,29 @@
 @using BlazingPizza.Services
 
 <div class="main">
-    <div class="checkout-cols">
-        <div class="checkout-order-details">
-            <h4>Review order</h4>
-            <OrderReview Order="order" />
+    <EditForm Model=order.DeliveryAddress OnSubmit="CheckSubmission">
+        <div class="checkout-cols">
+            <div class="checkout-order-details">
+                <h4>Review order</h4>
+                <OrderReview Order="order" />
+            </div>
+
+            <div class="checkout-delivery-address">
+                <h4>Deliver to...</h4>
+                @if (isErrorName)
+                {
+                    <div class="alert alert-danger">Please enter your name.</div>
+                }
+                @if (isError)
+                {
+                     <div class="alert alert-danger">Please enter your address.</div>
+                }
+                <AddressEditor Address="order.DeliveryAddress" />
+            </div>
         </div>
 
-        <div class="checkout-delivery-address">
-            <h4>Deliver to...</h4>
-            <AddressEditor Address="order.DeliveryAddress" />
-        </div>
-    </div>
-
-    <button class="checkout-button btn btn-warning" @onclick="PlaceOrder" disabled=@isSubmitting>
-        Place order
-    </button>
+        <button class="checkout-button btn btn-warning" disabled=@isSubmitting>
+            Place order
+        </button>
+    </EditForm>
 </div>
