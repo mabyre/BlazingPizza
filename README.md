@@ -1,3 +1,9 @@
+# Better place for ValidationSummary
+
+* Before we remove the ValidationSummary I'd like to show there can ba a better place
+
+<img style="margin: 10px" src="Images/2023-02-23_15h55_09.png" alt="Price and Size binded on Slider" />
+
 # Now using DataAnnotations
 
 * DataAnnotations are very wellknow in validation form process

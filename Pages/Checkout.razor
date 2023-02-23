@@ -22,14 +22,14 @@
                      <div class="alert alert-danger">Please enter your address.</div>
                 }*@
                 <AddressEditor Address="order.DeliveryAddress" />
+                <ValidationSummary />
             </div>
         </div>
 
         <button class="checkout-button btn btn-warning" disabled=@isSubmitting>
             Place order
         </button>
-    
-        <ValidationSummary />     
+             
         <DataAnnotationsValidator />
 
     </EditForm>
