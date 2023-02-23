@@ -1,3 +1,14 @@
+# Now using DataAnnotations
+
+* DataAnnotations are very wellknow in validation form process
+
+Here I add a big problem because the form was not good like there was no OnInvalidSubmit and 
+the message was like lost connection with server thought was because of codebehind but no
+connect a ShowError method to OnInvalidSubmit make it work again
+
+<img style="margin: 10px" src="Images/2023-02-23_15h41_10.png" alt="Price and Size binded on Slider" />
+
+
 # First play with Validation Message
 
 * Add EditForm in Checkout.razor and InputText in AddressEditor.razor to play with form validation.
