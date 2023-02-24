@@ -1,100 +1,18 @@
-# First call to JavaScript
+# Blazing Pizza
 
-* Use JavaScript.InvokeAsync to display a confirm dialogbox in JavaScript
+It' a tutorial Blazor Application to learn how quickly develop Balzor apps. 
 
-I'm glad to correct a Bug in Learn Microsoft concernig the call to JavaScript.InvokeAsync
+This tutorial has only one disadvantage, it makes you hungry ;)
 
-<img style="margin: 10px" src="Images/2023-02-24_11h30_24.png" alt="Price and Size binded on Slider" />
+This tutorial cames from **Learn Microsoft** :
 
-# Create an EditContext for EditForm binding on
+[Learn Micrsoft - build-web-apps-with-blazor](https://learn.microsoft.com/fr-fr/training/paths/build-web-apps-with-blazor/)
 
-This one was not easy cause I did not see this binding
-<EditForm EditContext=editContext
+# Tutorial's Steps
 
-While binding on Model=order.DeliveryAddress HandleFieldChanged was not fired.
+[Create an EditContext for EditForm binding on](#Create-an-EditContext-for-EditForm-binding-on)
 
-It's really a result of the validation of forms because we arrive at efficiency while
-coding formular forms
-
-
-# Better place for ValidationSummary
-
-* Before we remove the ValidationSummary I'd like to show there can ba a better place
-
-<img style="margin: 10px" src="Images/2023-02-23_15h55_09.png" alt="Price and Size binded on Slider" />
-
-# Now using DataAnnotations
-
-* DataAnnotations are very wellknow in validation form process
-
-Here I add a big problem because the form was not good like there was no OnInvalidSubmit and 
-the message was like lost connection with server thought was because of codebehind but no
-connect a ShowError method to OnInvalidSubmit make it work again
-
-<img style="margin: 10px" src="Images/2023-02-23_15h41_10.png" alt="Price and Size binded on Slider" />
-
-
-# First play with Validation Message
-
-* Add EditForm in Checkout.razor and InputText in AddressEditor.razor to play with form validation.
-
-<img style="margin: 10px" src="Images/2023-02-23_12h29_53.png" alt="Price and Size binded on Slider" />
-
-# Add new Validation Page
-
-I had problems with the Blazor Component CodeBehind Templates (VS2022) and the directive **@page "/"** should be removed.
-
-Other problem with naming parameters of Shared Pages AddressEditor and OrderReview trying to named parameters in lower case but don't work.
-There was a warnig saying that lower case is a mistake to naming convention.
-A thought I did it before in particular with Index.rasor.
-
-Is this problem due to not using **@inhirits** from PageBase should be checked.
-
-I'm not sure using IndexBase:ComponentBase and not partial so you can make properties protected is very usefull, the template does'nt.
-
-<img style="margin: 10px" src="Images/2023-02-22_18h05_15.png" alt="Price and Size binded on Slider" />
-
-# Oder Detail Page
-
-Now you have a recap from your order.
-
-Use of MainLayout to factorize Navagation buttons
-
-<img style="margin: 10px" src="Images/2023-02-22_16h01_29.png" alt="Price and Size binded on Slider" />
-
-# Add an Order Page
-
-It's find for the customer to be able to summarize his order
-
-<img style="margin: 10px" src="Images/2023-02-22_12h15_16.png" alt="Price and Size binded on Slider" />
-
-# Add Entity Framework support for orders and pizzas
-
-To test it's needed to remove the tree files pizza.db, pizza.db-shm, pizza.db-wal
-to make de DB recreat by Entity Framework
-
-# Allow customers to place an order
-
-Manage Checkout Page's PlaceOrder button
-
-<img style="margin: 10px" src="Images/2023-02-22_12h15_07.png" alt="Price and Size binded on Slider" />
-
-# Acces to Data
-
-Use of SQLLite to stock pizzas :
-
-[Learn Microsoft - Acces do data](https://learn.microsoft.com/fr-fr/training/modules/interact-with-data-blazor-web-apps/5-exercise-access-data-from-blazor-components)
-
-# Second Step
-
-Add Navigation
-
-<img style="margin: 10px" src="Images/2023-02-22_12h14_45.png" alt="Price and Size binded on Slider" />
-
-# First Step
-
-<img style="margin: 10px" src="Images/2023-02-22_12h14_32.png" alt="Price and Size binded on Slider" />
-
+[First call to JavaScript](#first-call-to-javaScript)
 
 # Contributing
 
@@ -126,3 +44,102 @@ Privacy information can be found at https://privacy.microsoft.com/en-us/
 
 Microsoft and any contributors reserve all other rights, whether under their respective copyrights, patents,
 or trademarks, whether by implication, estoppel or otherwise.
+
+---
+
+# First Step
+
+Slider is now binding on pizza'a price and size
+
+<img style="margin: 10px" src="Images/2023-02-22_12h14_32.png" alt="Price and Size binded on Slider" />
+
+# Second Step
+
+Add Navigation
+
+<img style="margin: 10px" src="Images/2023-02-22_12h14_45.png" alt="Price and Size binded on Slider" />
+
+# Acces to Data
+
+Use of SQLLite to stock pizzas :
+
+[Learn Microsoft - Acces do data](https://learn.microsoft.com/fr-fr/training/modules/interact-with-data-blazor-web-apps/5-exercise-access-data-from-blazor-components)
+
+# Allow customers to place an order
+
+Manage Checkout Page's PlaceOrder button
+
+<img style="margin: 10px" src="Images/2023-02-22_12h15_07.png" alt="Price and Size binded on Slider" />
+
+# Add Entity Framework support for orders and pizzas
+
+To test it's needed to remove the tree files pizza.db, pizza.db-shm, pizza.db-wal
+to make de DB recreat by Entity Framework
+
+# Add an Order Page
+
+It's find for the customer to be able to summarize his order
+
+<img style="margin: 10px" src="Images/2023-02-22_12h15_16.png" alt="Price and Size binded on Slider" />
+
+# Oder Detail Page
+
+Now you have a recap from your order.
+
+Use of MainLayout to factorize Navagation buttons
+
+<img style="margin: 10px" src="Images/2023-02-22_16h01_29.png" alt="Price and Size binded on Slider" />
+
+# Add new Validation Page
+
+I had problems with the Blazor Component CodeBehind Templates (VS2022) and the directive **@page "/"** should be removed.
+
+Other problem with naming parameters of Shared Pages AddressEditor and OrderReview trying to named parameters in lower case but don't work.
+There was a warnig saying that lower case is a mistake to naming convention.
+A thought I did it before in particular with Index.rasor.
+
+Is this problem due to not using **@inhirits** from PageBase should be checked.
+
+I'm not sure using IndexBase:ComponentBase and not partial so you can make properties protected is very usefull, the template does'nt.
+
+<img style="margin: 10px" src="Images/2023-02-22_18h05_15.png" alt="Price and Size binded on Slider" />
+
+# First play with Validation Message
+
+* Add EditForm in Checkout.razor and InputText in AddressEditor.razor to play with form validation.
+
+<img style="margin: 10px" src="Images/2023-02-23_12h29_53.png" alt="Price and Size binded on Slider" />
+
+# Now using DataAnnotations
+
+* DataAnnotations are very wellknow in validation form process
+
+Here I add a big problem because the form was not good like there was no OnInvalidSubmit and 
+the message was like lost connection with server thought was because of codebehind but no
+connect a ShowError method to OnInvalidSubmit make it work again
+
+<img style="margin: 10px" src="Images/2023-02-23_15h41_10.png" alt="Price and Size binded on Slider" />
+
+# Better place for ValidationSummary
+
+* Before we remove the ValidationSummary I'd like to show there can ba a better place
+
+<img style="margin: 10px" src="Images/2023-02-23_15h55_09.png" alt="Price and Size binded on Slider" />
+
+# Create an EditContext for EditForm binding on
+
+This one was not easy cause I did not see this binding
+<EditForm EditContext=editContext
+
+While binding on Model=order.DeliveryAddress HandleFieldChanged was not fired.
+
+It's really a result of the validation of forms because we arrive at efficiency while
+coding formular forms
+
+# First call to JavaScript
+
+* Use JavaScript.InvokeAsync to display a confirm dialogbox in JavaScript
+
+I'm glad to correct a Bug in Learn Microsoft concernig the call to JavaScript.InvokeAsync
+
+<img style="margin: 10px" src="Images/2023-02-24_11h30_24.png" alt="Price and Size binded on Slider" />
