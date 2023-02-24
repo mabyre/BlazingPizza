@@ -153,6 +153,16 @@ Display a very cool alert box
 
 # Create a family's pizza
 
-* For this pizza size is fixed so we don't need slider to choose size in ConfigurePizzaDialog 
+* For this pizza size is fixed so we don't need slider to choose size in ConfigurePizzaDialog
+
+# Reusing Components Through Modeling
+
+* Creation of a component @typeparam TItem
+
+<img style="margin: 10px" src="Images/2023-02-24_14h44_37.png" alt="Price and Size binded on Slider" />
+
+
+
+
 
 
