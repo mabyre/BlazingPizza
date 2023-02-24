@@ -1,6 +1,6 @@
 # Blazing Pizza
 
-It' a tutorial Blazor Application to learn how quickly develop Balzor apps. 
+It's a tutorial Blazor Application for selling pizzas, to learn how to quickly develop Balzor apps.
 
 This tutorial has only one disadvantage, it makes you hungry ;)
 
@@ -10,9 +10,8 @@ This tutorial cames from **Learn Microsoft** :
 
 # Tutorial's Steps
 
-[Create an EditContext for EditForm binding on](#Create-an-EditContext-for-EditForm-binding-on)
-
-[First call to JavaScript](#first-call-to-javaScript)
+* [Create an EditContext for EditForm binding on](#Create-an-EditContext-for-EditForm-binding-on)
+* [First call to JavaScript](#first-call-to-javaScript)
 
 # Contributing
 
@@ -143,3 +142,13 @@ coding formular forms
 I'm glad to correct a Bug in Learn Microsoft concernig the call to JavaScript.InvokeAsync
 
 <img style="margin: 10px" src="Images/2023-02-24_11h30_24.png" alt="Price and Size binded on Slider" />
+
+# Adding a third-party JavaScript library to a Blazor app
+
+* Use of sweetalert@latest/dist/sweetalert.min.js 
+
+Display a very cool alert box
+
+<img style="margin: 10px" src="Images/2023-02-24_12h53_16.png" alt="Price and Size binded on Slider" />
+
+
