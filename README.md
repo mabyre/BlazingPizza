@@ -163,7 +163,9 @@ Display a very cool alert box
 
 <img style="margin: 10px" src="Images/2023-02-24_14h44_37.png" alt="Price and Size binded on Slider" />
 
-This time tutorial ending snif cause I spend good developing in Blazor
+This time tutorial is ending, snif cause I spend good developing in Blazor.
+
+I had just little trobble with version **language C# 9.0 to C# 11.0**, I don't know why obviously I should specify C# 11.0 but I don't. This project now works fine with C# 9.0
 
 I will always continue to build the digital world !
 
