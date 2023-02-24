@@ -1,3 +1,11 @@
+# First call to JavaScript
+
+* Use JavaScript.InvokeAsync to display a confirm dialogbox in JavaScript
+
+I'm glad to correct a Bug in Learn Microsoft concernig the call to JavaScript.InvokeAsync
+
+<img style="margin: 10px" src="Images/2023-02-24_11h30_24.png" alt="Price and Size binded on Slider" />
+
 # Create an EditContext for EditForm binding on
 
 This one was not easy cause I did not see this binding
