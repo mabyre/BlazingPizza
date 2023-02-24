@@ -10,7 +10,9 @@ This tutorial cames from **Learn Microsoft** :
 
 # Tutorial's Steps
 
+* [Now using DataAnnotations](#Now-using-DataAnnotations)
 * [Create an EditContext for EditForm binding on](#Create-an-EditContext-for-EditForm-binding-on)
+* [Better place for ValidationSummary](#Better-place-for-ValidationSummary)
 * [First call to JavaScript](#first-call-to-javaScript)
 
 # Contributing
@@ -60,7 +62,7 @@ Add Navigation
 
 # Acces to Data
 
-Use of SQLLite to stock pizzas :
+Use of **SQLLite** to stock pizzas :
 
 [Learn Microsoft - Acces do data](https://learn.microsoft.com/fr-fr/training/modules/interact-with-data-blazor-web-apps/5-exercise-access-data-from-blazor-components)
 
@@ -73,25 +75,25 @@ Manage Checkout Page's PlaceOrder button
 # Add Entity Framework support for orders and pizzas
 
 To test it's needed to remove the tree files pizza.db, pizza.db-shm, pizza.db-wal
-to make de DB recreat by Entity Framework
+to make de DB recreat by **Entity Framework**
 
 # Add an Order Page
 
-It's find for the customer to be able to summarize his order
+It's find for the customer to be able to summarize his orders
 
 <img style="margin: 10px" src="Images/2023-02-22_12h15_16.png" alt="Price and Size binded on Slider" />
 
 # Oder Detail Page
 
-Now you have a recap from your order.
+Now you have a recap for your orders.
 
-Use of MainLayout to factorize Navagation buttons
+Use of **MainLayout** to factorize Navagation buttons
 
 <img style="margin: 10px" src="Images/2023-02-22_16h01_29.png" alt="Price and Size binded on Slider" />
 
 # Add new Validation Page
 
-I had problems with the Blazor Component CodeBehind Templates (VS2022) and the directive **@page "/"** should be removed.
+I had **problems** with the Blazor Component CodeBehind Templates (VS2022) and the directive **@page "/"** should be removed.
 
 Other problem with naming parameters of Shared Pages AddressEditor and OrderReview trying to named parameters in lower case but don't work.
 There was a warnig saying that lower case is a mistake to naming convention.
@@ -105,13 +107,13 @@ I'm not sure using IndexBase:ComponentBase and not partial so you can make prope
 
 # First play with Validation Message
 
-* Add EditForm in Checkout.razor and InputText in AddressEditor.razor to play with form validation.
+* Add EditForm in Checkout.razor and **InputText** in AddressEditor.razor to play with form validation.
 
 <img style="margin: 10px" src="Images/2023-02-23_12h29_53.png" alt="Price and Size binded on Slider" />
 
 # Now using DataAnnotations
 
-* DataAnnotations are very wellknow in validation form process
+* **DataAnnotations** are very wellknow in validation form process
 
 Here I add a big problem because the form was not good like there was no OnInvalidSubmit and 
 the message was like lost connection with server thought was because of codebehind but no
@@ -127,17 +129,17 @@ connect a ShowError method to OnInvalidSubmit make it work again
 
 # Create an EditContext for EditForm binding on
 
-This one was not easy cause I did not see this binding
+This one was not easy for me because I did not see this binding
 <EditForm EditContext=editContext
 
-While binding on Model=order.DeliveryAddress HandleFieldChanged was not fired.
+While binding on Model=order.DeliveryAddress **HandleFieldChanged** was not fired.
 
 It's really a result of the validation of forms because we arrive at efficiency while
 coding formular forms
 
 # First call to JavaScript
 
-* Use JavaScript.InvokeAsync to display a confirm dialogbox in JavaScript
+* Use of **JavaScript.InvokeAsync** to display a confirm dialogbox in JavaScript
 
 I'm glad to correct a Bug in Learn Microsoft concernig the call to JavaScript.InvokeAsync
 
@@ -157,9 +159,13 @@ Display a very cool alert box
 
 # Reusing Components Through Modeling
 
-* Creation of a component @typeparam TItem
+* Creation of a component **@typeparam** TItem to paginate my pizza's orders
 
 <img style="margin: 10px" src="Images/2023-02-24_14h44_37.png" alt="Price and Size binded on Slider" />
+
+This time tutorial ending snif cause I spend good developing in Blazor
+
+I will always continue to build the digital world !
 
 
 
