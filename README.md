@@ -151,4 +151,8 @@ Display a very cool alert box
 
 <img style="margin: 10px" src="Images/2023-02-24_12h53_16.png" alt="Price and Size binded on Slider" />
 
+# Create a family's pizza
+
+* For this pizza size is fixed so we don't need slider to choose size in ConfigurePizzaDialog 
+
 

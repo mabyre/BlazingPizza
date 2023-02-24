@@ -1,13 +1,17 @@
 ﻿
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace BlazingPizza;
+
+// DefaultValue of items are for test purpose
+// makes it more easy to fill form
 
 public class Address
 {
     public int Id { get; set; }
 
-    [Required, MinLength(3), MaxLength(100)]
+    [Required, MinLength(3), MaxLength(100), DefaultValue("Enter your Name")]
     public string Name { get; set; }
 
     [Required, MinLength(5), MaxLength(100)]
